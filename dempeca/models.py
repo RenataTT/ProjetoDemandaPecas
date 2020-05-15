@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Peca(models.Model):
-    idpeca = models.AutoField(primary_key=True)
+    idPeca = models.AutoField(primary_key=True)
     valor = models.FloatField()
     descricao = models.CharField(max_length=255)
 
