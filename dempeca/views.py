@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from .models import *
+from  . import models 
 from .serializers import *
-from rest_framework import authentication, permissions, reverse
+from rest_framework import viewsets, authentication, permissions, reverse, serializers
+
 
 # Create your views here.
 class DemandaViewSet(viewsets.ModelViewSet):
