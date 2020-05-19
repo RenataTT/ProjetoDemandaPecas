@@ -1,0 +1,350 @@
+{
+	"info": {
+		"_postman_id": "8e126fc8-8b26-403f-8086-eddf51cfe620",
+		"name": "API DemandaPeca",
+		"description": "Teste para a API de Demanda Peca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "http://localhost:8000/api/usuarios/",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1d1a16ae-fa88-483c-be05-aa22814ab5ad",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/usuarios/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"usuarios",
+								""
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "api",
+									"disabled": true
+								},
+								{
+									"key": "2",
+									"value": "Renata",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retorna todos os Usuarios"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/usuarios/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1d1a16ae-fa88-483c-be05-aa22814ab5ad",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/usuarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"usuarios",
+								"1"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "api",
+									"disabled": true
+								},
+								{
+									"key": "2",
+									"value": "Renata",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Deve retornar um Usuario com ID, Nome do Usuario."
+					},
+					"response": []
+				}
+			],
+			"description": "Teste para Usuários",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Pecas",
+			"item": [
+				{
+					"name": "http://localhost:8000/api/pecas/",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1d1a16ae-fa88-483c-be05-aa22814ab5ad",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/pecas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pecas",
+								""
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "api",
+									"disabled": true
+								},
+								{
+									"key": "2",
+									"value": "Renata",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Deve retornar pecas com ID, valor e descrição"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/pecas/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1d1a16ae-fa88-483c-be05-aa22814ab5ad",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/pecas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pecas",
+								"1"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "api",
+									"disabled": true
+								},
+								{
+									"key": "2",
+									"value": "Renata",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Deve Retornar as Pecas",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Demandas",
+			"item": [
+				{
+					"name": "http://localhost:8000/api/demandas/",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1d1a16ae-fa88-483c-be05-aa22814ab5ad",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"idDemanda\":2,\"rua\":\"Dois de Fevereiro\",\"bairro\":\"Meier\",\"numero\":\"1411\",\"cidade\":\"Rio de janeiro\",\"cep\":\"20745-311\",\"status\":1,\"usuario\":3,\"pecas\":[4]}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/demandas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"demandas",
+								""
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "api",
+									"disabled": true
+								},
+								{
+									"key": "2",
+									"value": "Renata",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/demandas/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1d1a16ae-fa88-483c-be05-aa22814ab5ad",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"idDemanda\":2,\"rua\":\"Dois de Fevereiro\",\"bairro\":\"Meier\",\"numero\":\"1411\",\"cidade\":\"Rio de janeiro\",\"cep\":\"20745-311\",\"status\":1,\"usuario\":2,\"pecas\":[4]}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/demandas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"demandas",
+								"1"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "api",
+									"disabled": true
+								},
+								{
+									"key": "2",
+									"value": "Renata",
+									"disabled": true
+								}
+							]
+						},
+						"description": "deve retornar uma demanda por ID"
+					},
+					"response": []
+				}
+			],
+			"description": "Deve retornar demandas por ID",
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
